@@ -1,0 +1,240 @@
+name,area,country_code2,country_code3
+Afghanistan,652090,AF,AFG
+Albania,28748,AL,ALB
+Algeria,2381741,DZ,DZA
+American Samoa,199,AS,ASM
+Andorra,468,AD,AND
+Angola,1246700,AO,AGO
+Anguilla,96,AI,AIA
+Antarctica,13120000,AQ,ATA
+Antigua and Barbuda,442,AG,ATG
+Argentina,2780400,AR,ARG
+Armenia,29800,AM,ARM
+Aruba,193,AW,ABW
+Australia,7741220,AU,AUS
+Austria,83859,AT,AUT
+Azerbaijan,86600,AZ,AZE
+Bahamas,13878,BS,BHS
+Bahrain,694,BH,BHR
+Bangladesh,143998,BD,BGD
+Barbados,430,BB,BRB
+Belarus,207600,BY,BLR
+Belgium,30518,BE,BEL
+Belize,22696,BZ,BLZ
+Benin,112622,BJ,BEN
+Bermuda,53,BM,BMU
+Bhutan,47000,BT,BTN
+Bolivia,1098581,BO,BOL
+Bosnia and Herzegovina,51197,BA,BIH
+Botswana,581730,BW,BWA
+Bouvet Island,59,BV,BVT
+Brazil,8547403,BR,BRA
+British Indian Ocean Territory,78,IO,IOT
+Brunei,5765,BN,BRN
+Bulgaria,110994,BG,BGR
+Burkina Faso,274000,BF,BFA
+Burundi,27834,BI,BDI
+Cambodia,181035,KH,KHM
+Cameroon,475442,CM,CMR
+Canada,9970610,CA,CAN
+Cape Verde,4033,CV,CPV
+Cayman Islands,264,KY,CYM
+Central African Republic,622984,CF,CAF
+Chad,1284000,TD,TCD
+Chile,756626,CL,CHL
+China,9572900,CN,CHN
+Christmas Island,135,CX,CXR
+Cocos (Keeling) Islands,14,CC,CCK
+Colombia,1138914,CO,COL
+Comoros,1862,KM,COM
+Congo,342000,CG,COG
+Cook Islands,236,CK,COK
+Costa Rica,51100,CR,CRI
+Côte d’Ivoire,322463,CI,CIV
+Croatia,56538,HR,HRV
+Cuba,110861,CU,CUB
+Cyprus,9251,CY,CYP
+Czech Republic,78866,CZ,CZE
+Denmark,43094,DK,DNK
+Djibouti,23200,DJ,DJI
+Dominica,751,DM,DMA
+Dominican Republic,48511,DO,DOM
+East Timor,14874,TP,TMP
+Ecuador,283561,EC,ECU
+Egypt,1001449,EG,EGY
+El Salvador,21041,SV,SLV
+Equatorial Guinea,28051,GQ,GNQ
+Eritrea,117600,ER,ERI
+Estonia,45227,EE,EST
+Ethiopia,1104300,ET,ETH
+Falkland Islands,12173,FK,FLK
+Faroe Islands,1399,FO,FRO
+Federated States of Micronesia,702,FM,FSM
+Fiji Islands,18274,FJ,FJI
+Finland,338145,FI,FIN
+France,551500,FR,FRA
+French Guiana,90000,GF,GUF
+French Polynesia,4000,PF,PYF
+French Southern territories,7780,TF,ATF
+Gabon,267668,GA,GAB
+Gambia,11295,GM,GMB
+Georgia,69700,GE,GEO
+Germany,357022,DE,DEU
+Ghana,238533,GH,GHA
+Gibraltar,6,GI,GIB
+Greece,131626,GR,GRC
+Greenland,2166090,GL,GRL
+Grenada,344,GD,GRD
+Guadeloupe,1705,GP,GLP
+Guam,549,GU,GUM
+Guatemala,108889,GT,GTM
+Guinea,245857,GN,GIN
+Guinea-Bissau,36125,GW,GNB
+Guyana,214969,GY,GUY
+Haiti,27750,HT,HTI
+Heard Island and McDonald Islands,359,HM,HMD
+Holy See (Vatican City State),0.4,VA,VAT
+Honduras,112088,HN,HND
+Hong Kong,1075,HK,HKG
+Hungary,93030,HU,HUN
+Iceland,103000,IS,ISL
+India,3287263,IN,IND
+Indonesia,1904569,ID,IDN
+Iran,1648195,IR,IRN
+Iraq,438317,IQ,IRQ
+Ireland,70273,IE,IRL
+Israel,21056,IL,ISR
+Italy,301316,IT,ITA
+Jamaica,10990,JM,JAM
+Japan,377829,JP,JPN
+Jordan,88946,JO,JOR
+Kazakstan,2724900,KZ,KAZ
+Kenya,580367,KE,KEN
+Kiribati,726,KI,KIR
+Kuwait,17818,KW,KWT
+Kyrgyzstan,199900,KG,KGZ
+Laos,236800,LA,LAO
+Latvia,64589,LV,LVA
+Lebanon,10400,LB,LBN
+Lesotho,30355,LS,LSO
+Liberia,111369,LR,LBR
+Libyan Arab Jamahiriya,1759540,LY,LBY
+Liechtenstein,160,LI,LIE
+Lithuania,65301,LT,LTU
+Luxembourg,2586,LU,LUX
+Macao,18,MO,MAC
+Macedonia,25713,MK,MKD
+Madagascar,587041,MG,MDG
+Malawi,118484,MW,MWI
+Malaysia,329758,MY,MYS
+Maldives,298,MV,MDV
+Mali,1240192,ML,MLI
+Malta,316,MT,MLT
+Marshall Islands,181,MH,MHL
+Martinique,1102,MQ,MTQ
+Mauritania,1025520,MR,MRT
+Mauritius,2040,MU,MUS
+Mayotte,373,YT,MYT
+Mexico,1958201,MX,MEX
+Moldova,33851,MD,MDA
+Monaco,1.5,MC,MCO
+Mongolia,1566500,MN,MNG
+Montserrat,102,MS,MSR
+Morocco,446550,MA,MAR
+Mozambique,801590,MZ,MOZ
+Myanmar,676578,MM,MMR
+Namibia,824292,NA,NAM
+Nauru,21,NR,NRU
+Nepal,147181,NP,NPL
+Netherlands,41526,NL,NLD
+Netherlands Antilles,800,AN,ANT
+New Caledonia,18575,NC,NCL
+New Zealand,270534,NZ,NZL
+Nicaragua,130000,NI,NIC
+Niger,1267000,NE,NER
+Nigeria,923768,NG,NGA
+Niue,260,NU,NIU
+Norfolk Island,36,NF,NFK
+North Korea,120538,KP,PRK
+Northern Mariana Islands,464,MP,MNP
+Norway,323877,NO,NOR
+Oman,309500,OM,OMN
+Pakistan,796095,PK,PAK
+Palau,459,PW,PLW
+Palestine,6257,PS,PSE
+Panama,75517,PA,PAN
+Papua New Guinea,462840,PG,PNG
+Paraguay,406752,PY,PRY
+Peru,1285216,PE,PER
+Philippines,300000,PH,PHL
+Pitcairn,49,PN,PCN
+Poland,323250,PL,POL
+Portugal,91982,PT,PRT
+Puerto Rico,8875,PR,PRI
+Qatar,11000,QA,QAT
+Réunion,2510,RE,REU
+Romania,238391,RO,ROM
+Russian Federation,17075400,RU,RUS
+Rwanda,26338,RW,RWA
+Saint Helena,314,SH,SHN
+Saint Kitts and Nevis,261,KN,KNA
+Saint Lucia,622,LC,LCA
+Saint Pierre and Miquelon,242,PM,SPM
+Saint Vincent and the Grenadines,388,VC,VCT
+Samoa,2831,WS,WSM
+San Marino,61,SM,SMR
+Sao Tome and Principe,964,ST,STP
+Saudi Arabia,2149690,SA,SAU
+Senegal,196722,SN,SEN
+Seychelles,455,SC,SYC
+Sierra Leone,71740,SL,SLE
+Singapore,618,SG,SGP
+Slovakia,49012,SK,SVK
+Slovenia,20256,SI,SVN
+Solomon Islands,28896,SB,SLB
+Somalia,637657,SO,SOM
+South Africa,1221037,ZA,ZAF
+South Georgia and the South Sandwich Islands,3903,GS,SGS
+South Korea,99434,KR,KOR
+Spain,505992,ES,ESP
+Sri Lanka,65610,LK,LKA
+Sudan,2505813,SD,SDN
+Suriname,163265,SR,SUR
+Svalbard and Jan Mayen,62422,SJ,SJM
+Swaziland,17364,SZ,SWZ
+Sweden,449964,SE,SWE
+Switzerland,41284,CH,CHE
+Syria,185180,SY,SYR
+Taiwan,36188,TW,TWN
+Tajikistan,143100,TJ,TJK
+Tanzania,883749,TZ,TZA
+Thailand,513115,TH,THA
+The Democratic Republic of the Congo,2344858,CD,COD
+Togo,56785,TG,TGO
+Tokelau,12,TK,TKL
+Tonga,650,TO,TON
+Trinidad and Tobago,5130,TT,TTO
+Tunisia,163610,TN,TUN
+Turkey,774815,TR,TUR
+Turkmenistan,488100,TM,TKM
+Turks and Caicos Islands,430,TC,TCA
+Tuvalu,26,TV,TUV
+Uganda,241038,UG,UGA
+Ukraine,603700,UA,UKR
+United Arab Emirates,83600,AE,ARE
+United Kingdom,242900,GB,GBR
+United States,9363520,US,USA
+United States Minor Outlying Islands,16,UM,UMI
+Uruguay,175016,UY,URY
+Uzbekistan,447400,UZ,UZB
+Vanuatu,12189,VU,VUT
+Venezuela,912050,VE,VEN
+Vietnam,331689,VN,VNM
+"Virgin Islands, British",151,VG,VGB
+"Virgin Islands, U.S.",347,VI,VIR
+Wallis and Futuna,200,WF,WLF
+Western Sahara,266000,EH,ESH
+Yemen,527968,YE,YEM
+Yugoslavia,102173,YU,YUG
+Zambia,752618,ZM,ZMB
+Zimbabwe,390757,ZW,ZWE
