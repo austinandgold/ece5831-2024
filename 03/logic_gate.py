@@ -65,3 +65,13 @@ class LogicGate():
             return 1
         else:
             return 0
+        
+        if __name__ == "__main__":
+            Print("****Logic Gate****")
+            Print("By Austin Moore")
+            Print("This Class consists of the following gates:")
+            Print("AND GATE")
+            Print("NAND GATE")
+            Print("OR GATE")
+            Print("NOR GATE")
+            Print("XOR GATE")
