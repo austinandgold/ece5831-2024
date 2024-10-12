@@ -3,4 +3,4 @@
 #Keras ueral network models
 *.h5
 #cache
-__pycach__
+__pycache__/
