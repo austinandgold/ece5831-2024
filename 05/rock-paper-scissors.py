@@ -3,10 +3,6 @@ from PIL import Image, ImageOps  # Install pillow instead of PIL
 import numpy as np
 import sys
 
-sys.argv[0] = "05/sample/Paper-samples/1.jpg"
-file_path = sys.argv[0]
-
-
 def load_image(file_path):
 # Replace this with the path to your image
     image = Image.open(file_path).convert("RGB")
@@ -23,7 +19,7 @@ def load_my_model():
     # Load the labels
     class_names = open("model/labels.txt", "r").readlines()
 
-    return model, class_name
+    return model, class_names
 
 def prep_input(image):
 
@@ -61,12 +57,10 @@ def predict(model,class_names, data):
     print("Confidence Score:", confidence_score)
 
 
-
-#if __name__ == "__main__":
-
-
-init()
-image = load_image(file_path)
-model, class_name = load_my_model()
-data = prep_input(image)
-predict(model, class_name, data)
+if __name__ == "__main__":
+    file_path = sys.argv[1]
+    init()
+    image = load_image(file_path)
+    model, class_name = load_my_model()
+    data = prep_input(image)
+    predict(model, class_name, data)
