@@ -4,3 +4,5 @@
 *.h5
 #cache
 __pycache__/
+*.py[cod]
+*$py.class
