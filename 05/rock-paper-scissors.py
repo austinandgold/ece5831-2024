@@ -14,7 +14,7 @@ def init():
 
 def load_my_model():
     # Load the model
-    model = load_model("model/keras_Model.h5", compile=False)
+    model = load_model("model/keras_Model.h5")
 
     # Load the labels
     class_names = open("model/labels.txt", "r").readlines()
