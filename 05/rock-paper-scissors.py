@@ -2,10 +2,13 @@ from keras.models import load_model  # TensorFlow is required for Keras to work
 from PIL import Image, ImageOps  # Install pillow instead of PIL
 import numpy as np
 import sys
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 
 def load_image(file_path):
 # Replace this with the path to your image
     image = Image.open(file_path).convert("RGB")
+    image.show()
     return image
 
 def init():
@@ -55,7 +58,10 @@ def predict(model,class_names, data):
     # Print prediction and confidence score
     print("Class:", class_name[2:], end="")
     print("Confidence Score:", confidence_score)
-
+    #photo = img.imread(image)
+    #lET US SEE THE SHAPE OF THE IMAGE.
+    #plt.imshow(photo)
+    #plt.show()
 
 if __name__ == "__main__":
     file_path = sys.argv[1]
