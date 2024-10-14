@@ -9,7 +9,6 @@ def load_image(file_path):
     # Replace this with the path to your image
     '''takes image path and converts it to an image file'''
     image = Image.open(file_path).convert("RGB")
-    image.show()
     return image
 
 def init():
@@ -69,10 +68,11 @@ def predict(model,class_names, data):
     #plt.show()
 
 if __name__ == "__main__":
-    '''This enables the user to enter a file path in the command line for analysis'''
+    '''This enables the user to enter a file path in the command line for analysis, also show image of sample'''
     file_path = sys.argv[1]
     init()
     image = load_image(file_path)
     model, class_name = load_my_model()
     data = prep_input(image)
     predict(model, class_name, data)
+    image.show()
