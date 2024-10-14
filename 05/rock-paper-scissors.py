@@ -6,17 +6,20 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 def load_image(file_path):
-# Replace this with the path to your image
+    # Replace this with the path to your image
+    '''takes image path and converts it to an image file'''
     image = Image.open(file_path).convert("RGB")
     image.show()
     return image
 
 def init():
     # Disable scientific notation for clarity
+    '''suppressess scientific notation'''
     np.set_printoptions(suppress=True)
 
 def load_my_model():
     # Load the model
+    '''loads the teachable model and the associated labels to use'''
     model = load_model("model/keras_Model.h5")
 
     # Load the labels
@@ -29,6 +32,7 @@ def prep_input(image):
     # Create the array of the right shape to feed into the keras model
     # The 'length' or number of images you can put into the array is
     # determined by the first position in the shape tuple, in this case 1
+    '''formatting input images to compare with training data'''
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 
@@ -50,6 +54,7 @@ def prep_input(image):
 def predict(model,class_names, data):
 
     # Predicts the model
+    '''The predict function will give us the class it believes the image belongs in (rock, paper, scissors) and how confident the model is in it's prediction'''
     prediction = model.predict(data)
     index = np.argmax(prediction)
     class_name = class_names[index]
@@ -64,6 +69,7 @@ def predict(model,class_names, data):
     #plt.show()
 
 if __name__ == "__main__":
+    '''This enables the user to enter a file path in the command line for analysis'''
     file_path = sys.argv[1]
     init()
     image = load_image(file_path)
