@@ -1,7 +1,7 @@
 #zip
 *.zip
 #Keras ueral network models
-*.h5
+#*.h5
 #cache
 __pycache__/
 *.py[cod]
