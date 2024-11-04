@@ -32,4 +32,5 @@ a = img.reshape(28,28)
 
 if __name__ == "__main__":
     '''This enables the user to enter a file path in the command line for analysis, also show image of sample'''
-    plt.show()
+    sample = Image.open('Custom MNIST Sample/Digit 2/2_2.png')
+    sample.show()
