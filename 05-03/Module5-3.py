@@ -35,4 +35,7 @@ if __name__ == "__main__":
     '''This enables the user to enter a file path in the command line for analysis, also show image of sample'''
     sample = Image.open(f'Custom MNIST Sample/Digit {second_arg}/{first_arg}')
     sample.show()
-    print(f'The image {first_arg} is {second_arg}. The Prediction is {p}.')
+    if int(second_arg) == p:
+        print(f'Success: Image {first_arg} is for digit {second_arg} is recognized by {p}')
+    else:
+        print(f'Fail: Image {first_arg} is for digit {second_arg} but the inference result is {p}') 
