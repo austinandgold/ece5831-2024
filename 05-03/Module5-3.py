@@ -11,12 +11,12 @@ import matplotlib as mpl
 
 mnist = mnist.Mnist()
 (_, _), (test_images, test_labels) = mnist.load()
-mnist.init_network()
+net = mnist.init_network()
 
-#first_arg = sys.argv[1]
-#second_arg = int(sys.argv[2])
+first_arg = sys.argv[1]
+second_arg = sys.argv[2]
 
-img = Image.open("Custom MNIST Sample/Digit 2/2_2.png").convert('L')
+img = Image.open(f'Custom MNIST Sample/Digit {second_arg}/{first_arg}').convert('L')
 img = img.resize((28,28))
 img = np.array(img)
 img = 255.0 - img
@@ -27,10 +27,12 @@ img = img.flatten()
 x = img
 
 y_hat = mnist.predict(x)
+p = np.argmax(y_hat)
 
 a = img.reshape(28,28)
 
 if __name__ == "__main__":
     '''This enables the user to enter a file path in the command line for analysis, also show image of sample'''
-    sample = Image.open('Custom MNIST Sample/Digit 2/2_2.png')
+    sample = Image.open(f'Custom MNIST Sample/Digit {second_arg}/{first_arg}')
     sample.show()
+    print(f'The image {first_arg} is {second_arg}. The Prediction is {p}.')
