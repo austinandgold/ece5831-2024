@@ -62,10 +62,10 @@ class MnistData():
 
     def _create_dataset(self):
         
-        self.dataset['train_images'] = self._load_images(f"{dataset_dir}/{key_file['train_images']}")
-        self.dataset['train_labels'] = self._load_labels(f"{dataset_dir}/{key_file['train_labels']}")
-        self.dataset['test_images'] = self._load_images(f"{dataset_dir}/{key_file['test_images']}")
-        self.dataset['test_labels'] = self._load_labels(f"{dataset_dir}/{key_file['test_labels']}")
+        self.dataset['train_images'] = self._load_images(f"{MnistData.dataset_dir}/{MnistData.key_file['train_images']}")
+        self.dataset['train_labels'] = self._load_labels(f"{MnistData.dataset_dir}/{MnistData.key_file['train_labels']}")
+        self.dataset['test_images'] = self._load_images(f"{MnistData.dataset_dir}/{MnistData.key_file['test_images']}")
+        self.dataset['test_labels'] = self._load_labels(f"{MnistData.dataset_dir}/{MnistData.key_file['test_labels']}")
         
         with open(f'{self.dataset_pkl_path}', 'wb') as f:
             print(f'Pickle: {self.dataset_dir}/{self.dataset_pkl} is being created')
@@ -82,7 +82,7 @@ class MnistData():
                 print('Done')
 
         else:
-            dataset = _create_dataset()
+            dataset = MnistData._create_dataset()
 
     def load(self):
         # normalize image datasets
@@ -94,7 +94,7 @@ class MnistData():
         for key in ('train_labels', 'test_labels'):
             self.dataset[key] = self._change_one_hot_label(self.dataset[key], 10)
 
-        return (self.dataset['test_images'], self.dataset['train_labels']), \
+        return (self.dataset['train_images'], self.dataset['train_labels']), \
             (self.dataset['test_images'], self.dataset['test_labels'])
 
     if __name__ == "__main__":
