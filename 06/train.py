@@ -206,3 +206,5 @@ for i in range(iterations):
         #print(f'Pickle: {my_weight_pkl_file} is being created.')
         pickle.dump(network.params, f)
         #print('Done.') 
+
+    network.params = None

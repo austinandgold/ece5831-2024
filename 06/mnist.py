@@ -21,7 +21,7 @@ class Mnist():
         return (x_train, y_train),(x_test, y_test)
     
     def init_network(self):
-        with open('model/sample_weight.pkl', 'rb') as f:
+        with open('dataset/Moore_mnist_model.pkl', 'rb') as f:
             self.params = pickle.load(f)
 
     def predict(self, x):
