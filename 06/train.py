@@ -5,6 +5,7 @@ from collections import OrderedDict
 from mnist import Mnist
 import pickle
 
+#layers classes
 class Relu:
     def __init__(self):
         self.mask = None
@@ -96,6 +97,7 @@ class SoftmaxWithLoss:
         """
         return dx
     
+#two layer net with backprop
 class TwoLayerNetWithBackProp:
     
     def __init__(self, input_size, hidden_size, output_size, weight_init_std=0.01):
@@ -123,7 +125,6 @@ class TwoLayerNetWithBackProp:
 
 
     def predict(self, x):
-        ## new implementation for backprop
         for layer in self.layers.values():
             x = layer.forward(x)
 
@@ -133,7 +134,6 @@ class TwoLayerNetWithBackProp:
     def loss(self, x, y):
         y_hat = self.predict(x)
 
-        # return self.errors.cross_entropy_error(y_hat, y)
         return self.last_layer.forward(y_hat, y)
 
     def accuracy(self, x, y):
@@ -168,7 +168,7 @@ mnist = Mnist()
 (x_train, y_train), (x_test, y_test) = mnist.load()
 
 network = TwoLayerNetWithBackProp(input_size=28*28, hidden_size=100, output_size=10)
-
+#using metrics from HW6
 iterations = 10000
 train_size = x_train.shape[0]
 batch_size = 16
@@ -190,7 +190,7 @@ for i in range(iterations):
     for key in ('w1', 'b1', 'w2', 'b2'):
         network.params[key] -= lr*grads[key]
 
-    ## this is for plotting losses over time
+    # this is for plotting losses over time
     train_losses.append(network.loss(x_batch, y_batch))
 
     if i%iter_per_ecoph == 0:
@@ -198,7 +198,6 @@ for i in range(iterations):
         train_accs.append(train_acc)
         test_acc = network.accuracy(x_test, y_test)
         test_accs.append(test_acc)
-        #print(f'train acc, test_acc : {train_acc}, {test_acc}')
 
     my_weight_pkl_file = 'Moore_mnist_model.pkl'
 
@@ -207,5 +206,3 @@ for i in range(iterations):
         network.params = pickle.load(f)
         #print('Done.') 
     network.update_layers()
-
-    #network.params = None
