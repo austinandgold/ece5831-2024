@@ -9,7 +9,7 @@ class MnistData():
 
     image_size = 28*28
     dataset_dir = 'dataset'
-    dataset_pkl = 'Moore_mnist_model.pkl'
+    dataset_pkl = 'mnist.pkl'
     url_base = 'http://jrkwon.com/data/ece5831/mnist/'
 
     key_file = {

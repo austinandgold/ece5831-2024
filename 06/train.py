@@ -200,11 +200,12 @@ for i in range(iterations):
         test_accs.append(test_acc)
         #print(f'train acc, test_acc : {train_acc}, {test_acc}')
 
-    my_weight_pkl_file = 'Moore_mnist_model.pkl'
+    my_weight_pkl_file = 'Jaerock_weights.pkl'
 
     with open(f'{my_weight_pkl_file}', 'wb') as f:
         #print(f'Pickle: {my_weight_pkl_file} is being created.')
-        pickle.dump(network.params, f)
+        network.params = pickle.load(f)
         #print('Done.') 
+    network.update_layers()
 
-    network.params = None
+    #network.params = None
