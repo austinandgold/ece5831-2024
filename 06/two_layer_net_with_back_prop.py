@@ -1,6 +1,9 @@
 import numpy as np
 from activations import Activations
 from errors import Errors
+from layers import SoftmaxWithLoss
+from layers import Affine
+from layers import Relu
 
 from collections import OrderedDict
 
