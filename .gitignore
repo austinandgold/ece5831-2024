@@ -8,3 +8,5 @@ __pycache__/
 *$py.class
 #JPG
 *.jpg
+#keras doing the troubleshoot a git issue
+*.keras
