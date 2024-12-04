@@ -10,44 +10,10 @@ from tensorflow.keras.preprocessing import image
 
 class DogsCats:
     
-    def __init__(self, model=None, train_dataset=None, validation_dataset=None, test_dataset=None, base_dir=None, src_dir=None):
-        """
-        Initialize the DogsCats class. If a model is provided, datasets are optional.
-        If no model is provided, datasets must be passed.
+    def __init__(self):
+        self.model = None
+   
 
-        Args:
-        - model (tf.keras.Model, optional): Pre-trained model (if provided, datasets are optional).
-        - train_dataset (tf.data.Dataset, optional): Training dataset (required if no model).
-        - validation_dataset (tf.data.Dataset, optional): Validation dataset (required if no model).
-        - test_dataset (tf.data.Dataset, optional): Testing dataset (required if no model).
-        - base_dir (Path, optional): Path to the base directory for datasets.
-        - src_dir (Path, optional): Path to the source directory for dataset files.
-        """
-
-        # Set model directly if provided
-        self.model = model
-
-        # If no model is provided, datasets must be provided
-        if not self.model:
-            if train_dataset is None or validation_dataset is None or test_dataset is None:
-                raise ValueError("You must provide train, validation, and test datasets if no model is provided.")
-            self.train_dataset = train_dataset
-            self.validation_dataset = validation_dataset
-            self.test_dataset = test_dataset
-        else:
-            # If the model is provided, datasets are not required
-            self.train_dataset = None
-            self.validation_dataset = None
-            self.test_dataset = None
-
-        # Set base_dir and src_dir if provided, else use defaults
-        self.base_dir = base_dir or Path("path/to/base_dir")  # Default path if not provided
-        self.src_dir = src_dir or Path("path/to/src_dir")  # Default path if not provided
-
-        # Print out the directory information for debugging purposes (optional)
-        print(f"Base directory is set to: {self.base_dir}")
-        print(f"Source directory is set to: {self.src_dir}")
-        
     def make_dataset_folders(self, subset_name, start_index, end_index):
 
         for category in ("dog", "cat"):
