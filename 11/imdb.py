@@ -6,10 +6,11 @@ import matplotlib.pyplot as plt
 class Imdb:
 
     def prepare_data(self):
+        
         # Load dataset
         (x_train, y_train), (x_test, y_test) = datasets.imdb.load_data(num_words=10000)
 
-        # Vectorize sequences (turn them into binary matrices)
+        # Vectorize sequences
         def vectorize_sequences(sequences, dimension=10000):
             results = np.zeros((len(sequences), dimension))
             for i, sequence in enumerate(sequences):
@@ -21,7 +22,7 @@ class Imdb:
         x_train = vectorize_sequences(x_train)
         x_test = vectorize_sequences(x_test)
 
-        # Convert labels to float32 type
+        # Convert labels
         y_train = np.asarray(y_train).astype('float32')
         y_test = np.asarray(y_test).astype('float32')
 
@@ -29,6 +30,7 @@ class Imdb:
         return x_train, y_train, x_test, y_test
 
     def build_model(self):
+        
         # Build the model
         model = tf.keras.Sequential([    
             tf.keras.layers.Dense(16, activation='relu', input_shape=(10000,)),
@@ -43,6 +45,7 @@ class Imdb:
         return model
 
     def train(self, x_train, y_train, model):
+        
         # Split data for validation
         x_val = x_train[:10000]
         y_val = y_train[:10000]
@@ -64,6 +67,7 @@ class Imdb:
         return history.history
 
     def plot_loss(self, history_dict):
+        
         # Plot loss values
         plt.clf()
         loss_values = history_dict['loss']
@@ -79,6 +83,7 @@ class Imdb:
         plt.show()
 
     def plot_accuracy(self, history_dict):
+        
         # Plot accuracy values
         plt.clf()
         acc = history_dict['accuracy']
@@ -94,6 +99,7 @@ class Imdb:
         plt.show()
 
     def evaluate(self, model, x_test, y_test):
+       
         # Evaluate the model on the test data
         results = model.evaluate(x_test, y_test)
 

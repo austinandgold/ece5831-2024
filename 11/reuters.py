@@ -5,7 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def vectorize_sequences(sequences, dimension=10000):
-    """Vectorize sequences by creating a binary matrix."""
+    
+    #Vectorize sequences
     results = np.zeros((len(sequences), dimension))
     for i, sequence in enumerate(sequences):
         for j in sequence:
@@ -15,7 +16,7 @@ def vectorize_sequences(sequences, dimension=10000):
 class Reuters:
 
     def prepare_data(self):
-        """Load and prepare the Reuters dataset."""
+        
         # Load dataset
         (train_data, train_labels), (test_data, test_labels) = reuters.load_data(num_words=10000)
 
@@ -30,7 +31,7 @@ class Reuters:
         return x_train, y_train, x_test, y_test
 
     def build_model(self):
-        """Build and compile a simple neural network model."""
+        #Build and compile model
         model = tf.keras.Sequential([    
             tf.keras.layers.Dense(64, activation='relu', input_shape=(10000,)),
             tf.keras.layers.Dense(64, activation='relu'),
@@ -42,14 +43,14 @@ class Reuters:
         return model
 
     def train(self, x_train, y_train, model, epochs=20, batch_size=512, validation_split=0.2):
-        """Train the model with training data and evaluate on a validation set."""
-        # Train the model with validation split
+        
+        # Train the model with training data and evaluate on a validation set
         history = model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, validation_split=validation_split)
 
         return history.history
 
     def plot_loss(self, history_dict):
-        """Plot the training and validation loss."""
+        #Plot the training and validation loss
         plt.clf()
         loss_values = history_dict['loss']
         val_loss_values = history_dict['val_loss']
@@ -64,7 +65,7 @@ class Reuters:
         plt.show()
 
     def plot_accuracy(self, history_dict):
-        """Plot the training and validation accuracy."""
+        #Plot the training and validation accuracy
         plt.clf()
         acc = history_dict['accuracy']
         val_acc = history_dict['val_accuracy']
@@ -79,6 +80,6 @@ class Reuters:
         plt.show()
 
     def evaluate(self, model, x_test, y_test):
-        """Evaluate the model on the test data."""
+        #Evaluate the model
         results = model.evaluate(x_test, y_test)
         return results
